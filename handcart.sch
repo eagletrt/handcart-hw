@@ -594,7 +594,7 @@ U 1 1 610613F5
 P 1650 4150
 F 0 "J3" H 1000 5500 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 1050 5400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 1650 4150 50  0001 C CNN
+F 2 "handcart:raspberrypi_hat_template" H 1650 4150 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 1650 4150 50  0001 C CNN
 	1    1650 4150
 	1    0    0    -1  
@@ -1536,50 +1536,6 @@ F 3 "~" H 6250 5900 50  0001 C CNN
 $EndComp
 Text Notes 5250 6000 0    118  ~ 24
 FANS
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 614D4003
-P 1400 5700
-F 0 "H1" H 1500 5746 50  0000 L CNN
-F 1 "MountingHole" H 1500 5655 50  0000 L CNN
-F 2 "handcart:MountingHole_2.75_6.1Free" H 1400 5700 50  0001 C CNN
-F 3 "~" H 1400 5700 50  0001 C CNN
-	1    1400 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 610579C6
-P 1400 5900
-F 0 "H2" H 1500 5946 50  0000 L CNN
-F 1 "MountingHole" H 1500 5855 50  0000 L CNN
-F 2 "handcart:MountingHole_2.75_6.1Free" H 1400 5900 50  0001 C CNN
-F 3 "~" H 1400 5900 50  0001 C CNN
-	1    1400 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 61057C1F
-P 2150 5700
-F 0 "H3" H 2250 5746 50  0000 L CNN
-F 1 "MountingHole" H 2250 5655 50  0000 L CNN
-F 2 "handcart:MountingHole_2.75_6.1Free" H 2150 5700 50  0001 C CNN
-F 3 "~" H 2150 5700 50  0001 C CNN
-	1    2150 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 61057F0F
-P 2150 5900
-F 0 "H4" H 2250 5946 50  0000 L CNN
-F 1 "MountingHole" H 2250 5855 50  0000 L CNN
-F 2 "handcart:MountingHole_2.75_6.1Free" H 2150 5900 50  0001 C CNN
-F 3 "~" H 2150 5900 50  0001 C CNN
-	1    2150 5900
-	1    0    0    -1  
-$EndComp
 Text Label 600  4650 0    50   ~ 0
 INT
 Wire Wire Line
