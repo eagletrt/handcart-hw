@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Handcart"
-Date "2021-08-08"
+Date "2021-11-11"
 Rev "v2"
 Comp "E-Agle - TRT"
 Comment1 ""
@@ -261,8 +261,6 @@ Text Label 2650 2500 0    50   ~ 0
 TO_CHARGER
 Text Label 4200 2500 2    50   ~ 0
 FROM_CHARGER
-Wire Wire Line
-	10650 850  10650 800 
 $Comp
 L power:GND #PWR037
 U 1 1 61068BDC
@@ -327,8 +325,6 @@ Text Label 11150 800  2    50   ~ 0
 TO_CHARGER
 Wire Wire Line
 	10550 1600 10550 1450
-Wire Wire Line
-	10650 800  11150 800 
 Text Label 550  1100 0    50   ~ 0
 FROM_SD
 Text Label 4200 2600 2    50   ~ 0
@@ -1563,17 +1559,6 @@ F 3 "" H 1650 1500 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L handcart:OJE-SH-112DM K1
-U 1 1 6113716B
-P 10400 1150
-F 0 "K1" H 10900 1150 50  0000 R CNN
-F 1 "OJE-SH-112DM" H 11400 1250 50  0000 R CNN
-F 2 "handcart:OJE-SH-112DM" H 11675 1200 50  0001 C CNN
-F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 10350 1150 50  0001 C CNN
-	1    10400 1150
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 61169ACB
 P 1400 6600
@@ -1986,9 +1971,6 @@ Text Label 7050 3200 2    50   ~ 0
 RESET_BUTTON
 Wire Wire Line
 	7050 3200 6400 3200
-Wire Wire Line
-	10650 800  10150 800 
-Connection ~ 10650 800 
 Connection ~ 10150 800 
 Text Label 5250 3600 0    50   ~ 0
 TO_CHARGER
@@ -2140,4 +2122,23 @@ Wire Notes Line
 	5300 2750 5650 2750
 Wire Notes Line
 	5300 3000 5650 3000
+$Comp
+L Eagle_Main:EX12U1S K1
+U 1 1 618FFE24
+P 10350 1150
+F 0 "K1" H 10780 1196 50  0000 L CNN
+F 1 "EX12U1S" H 10780 1105 50  0000 L CNN
+F 2 "Eagle_Main:EX12U1S" H 11900 1100 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/212/1/relay_ex1_ex2_e-844962.pdf" H 10350 1150 50  0001 C CNN
+	1    10350 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 800  10650 800 
+Wire Wire Line
+	10650 850  10650 800 
+Connection ~ 10650 800 
+Wire Wire Line
+	10650 800  11150 800 
+NoConn ~ 10450 850 
 $EndSCHEMATC
