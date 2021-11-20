@@ -590,7 +590,7 @@ U 1 1 610613F5
 P 1650 4150
 F 0 "J3" H 1000 5500 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 1050 5400 50  0000 C CNN
-F 2 "handcart:raspberrypi_hat_template" H 1650 4150 50  0001 C CNN
+F 2 "Eagle_Main:raspberrypi_hat_template" H 1650 4150 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 1650 4150 50  0001 C CNN
 	1    1650 4150
 	1    0    0    -1  
@@ -1813,12 +1813,12 @@ $EndComp
 Wire Wire Line
 	4450 7550 4450 7500
 $Comp
-L handcart:Tex_DCDC U4
+L Eagle_Main:Tex_DCDC U4
 U 1 1 611A7401
 P 4100 850
 F 0 "U4" V 4238 72  50  0000 R CNN
 F 1 "Tex_DCDC" V 4147 72  50  0000 R CNN
-F 2 "handcart:Tex_DCDC" H 4000 850 50  0001 C CNN
+F 2 "Eagle_Main:Tex_DCDC_horizontal" H 4000 850 50  0001 C CNN
 F 3 "" H 4000 850 50  0001 C CNN
 	1    4100 850 
 	0    -1   -1   0   
@@ -2141,4 +2141,92 @@ Connection ~ 10650 800
 Wire Wire Line
 	10650 800  11150 800 
 NoConn ~ 10450 850 
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 619A6886
+P 10450 6100
+F 0 "H6" H 10550 6146 50  0000 L CNN
+F 1 "MountingHole" H 10550 6055 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 10450 6100 50  0001 C CNN
+F 3 "~" H 10450 6100 50  0001 C CNN
+	1    10450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 619A6D58
+P 10450 6250
+F 0 "H7" H 10550 6296 50  0000 L CNN
+F 1 "MountingHole" H 10550 6205 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 10450 6250 50  0001 C CNN
+F 3 "~" H 10450 6250 50  0001 C CNN
+	1    10450 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 619A6FE9
+P 10450 6400
+F 0 "H8" H 10550 6446 50  0000 L CNN
+F 1 "MountingHole" H 10550 6355 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 10450 6400 50  0001 C CNN
+F 3 "~" H 10450 6400 50  0001 C CNN
+	1    10450 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 619A7249
+P 10450 5950
+F 0 "H5" H 10550 5996 50  0000 L CNN
+F 1 "MountingHole" H 10550 5905 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 10450 5950 50  0001 C CNN
+F 3 "~" H 10450 5950 50  0001 C CNN
+	1    10450 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 619B72FA
+P 9750 6100
+F 0 "H2" H 9850 6146 50  0000 L CNN
+F 1 "MountingHole" H 9850 6055 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 9750 6100 50  0001 C CNN
+F 3 "~" H 9750 6100 50  0001 C CNN
+	1    9750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 619B7300
+P 9750 6250
+F 0 "H3" H 9850 6296 50  0000 L CNN
+F 1 "MountingHole" H 9850 6205 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 9750 6250 50  0001 C CNN
+F 3 "~" H 9750 6250 50  0001 C CNN
+	1    9750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 619B7306
+P 9750 6400
+F 0 "H4" H 9850 6446 50  0000 L CNN
+F 1 "MountingHole" H 9850 6355 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 9750 6400 50  0001 C CNN
+F 3 "~" H 9750 6400 50  0001 C CNN
+	1    9750 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 619B730C
+P 9750 5950
+F 0 "H1" H 9850 5996 50  0000 L CNN
+F 1 "MountingHole" H 9850 5905 50  0000 L CNN
+F 2 "Eagle_Main:MountingHole_3.2_6.1Free" H 9750 5950 50  0001 C CNN
+F 3 "~" H 9750 5950 50  0001 C CNN
+	1    9750 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
