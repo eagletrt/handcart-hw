@@ -66,9 +66,9 @@ Wire Wire Line
 Wire Wire Line
 	1150 800  900  800 
 Text Label 550  1200 0    50   ~ 0
-TO_TSMS
+SD_BMS_OUT
 Text Label 550  2000 0    50   ~ 0
-FROM_TSMS
+SD_END
 Wire Wire Line
 	550  1100 1150 1100
 Wire Wire Line
@@ -255,12 +255,12 @@ Wire Wire Line
 	2050 7100 2400 7100
 Wire Wire Line
 	3750 7150 4100 7150
-Text Label 2650 2400 0    50   ~ 0
+Text Label 2600 2400 0    50   ~ 0
 PON
-Text Label 2650 2500 0    50   ~ 0
-TO_CHARGER
-Text Label 4200 2500 2    50   ~ 0
-FROM_CHARGER
+Text Label 2600 2500 0    50   ~ 0
+SD_TO_CHARGER
+Text Label 4350 2500 2    50   ~ 0
+SD_FROM_CHARGER
 $Comp
 L power:GND #PWR037
 U 1 1 61068BDC
@@ -322,17 +322,17 @@ Wire Wire Line
 	10150 2150 10150 2100
 Connection ~ 10150 2100
 Text Label 11150 800  2    50   ~ 0
-TO_CHARGER
+SD_TO_CHARGER
 Wire Wire Line
 	10550 1600 10550 1450
 Text Label 550  1100 0    50   ~ 0
-FROM_SD
-Text Label 4200 2600 2    50   ~ 0
-FROM_SD
-Text Label 7050 3400 2    50   ~ 0
-TO_TSMS
-Text Label 7050 3300 2    50   ~ 0
-FROM_TSMS
+SD_BMS_IN
+Text Label 4350 2600 2    50   ~ 0
+SD_BMS_IN
+Text Label 7200 3400 2    50   ~ 0
+SD_BMS_OUT
+Text Label 7200 3300 2    50   ~ 0
+SD_END
 Text Notes 8900 700  0    118  ~ 24
 SHUTDOWN
 Text Label 8700 1750 0    50   ~ 0
@@ -366,12 +366,12 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR011
 U 1 1 61092FF4
-P 2600 2300
-F 0 "#PWR011" H 2600 2150 50  0001 C CNN
-F 1 "+12V" V 2615 2428 50  0000 L CNN
-F 2 "" H 2600 2300 50  0001 C CNN
-F 3 "" H 2600 2300 50  0001 C CNN
-	1    2600 2300
+P 2550 2300
+F 0 "#PWR011" H 2550 2150 50  0001 C CNN
+F 1 "+12V" V 2600 2350 50  0000 L CNN
+F 2 "" H 2550 2300 50  0001 C CNN
+F 3 "" H 2550 2300 50  0001 C CNN
+	1    2550 2300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -389,7 +389,7 @@ Text Label 4300 2300 2    50   ~ 0
 BRUSA_RX
 Text Label 4300 2200 2    50   ~ 0
 BRUSA_TX
-Text Label 2650 2300 0    50   ~ 0
+Text Label 2600 2300 0    50   ~ 0
 AUX
 $Comp
 L power:GND #PWR030
@@ -505,7 +505,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 1500 8450 1400
 Text Label 8050 700  0    50   ~ 0
-FROM_TSMS
+SD_END
 Wire Wire Line
 	8050 700  8450 700 
 Wire Wire Line
@@ -541,19 +541,19 @@ $EndComp
 Wire Wire Line
 	3650 2200 4300 2200
 Wire Wire Line
-	4300 2300 3650 2300
+	4350 2300 3650 2300
 Wire Wire Line
 	3700 2400 3650 2400
 Wire Wire Line
-	2600 2300 3150 2300
+	2550 2300 3150 2300
 Wire Wire Line
-	2650 2400 3150 2400
+	2600 2400 3150 2400
 Wire Wire Line
-	3150 2100 2650 2100
+	3150 2100 2600 2100
 Wire Wire Line
 	4150 2100 3650 2100
 Wire Wire Line
-	3150 2500 2650 2500
+	3150 2500 2600 2500
 $Comp
 L Interface_CAN_LIN:MCP2562-E-SN U2
 U 1 1 61054A5F
@@ -711,12 +711,12 @@ TO PC
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 6103A16F
-P 4500 2300
-F 0 "SW1" H 4350 2400 50  0000 C CNN
-F 1 "SW_SPDT" H 4500 2500 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 4500 2300 50  0001 C CNN
-F 3 "~" H 4500 2300 50  0001 C CNN
-	1    4500 2300
+P 4550 2300
+F 0 "SW1" H 4400 2400 50  0000 C CNN
+F 1 "SW_SPDT" H 4550 2500 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 4550 2300 50  0001 C CNN
+F 3 "~" H 4550 2300 50  0001 C CNN
+	1    4550 2300
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -860,7 +860,7 @@ Wire Wire Line
 Text Label 5300 2400 2    50   ~ 0
 PC_TX
 Wire Wire Line
-	5300 2400 4700 2400
+	5300 2400 4750 2400
 Text Label 5900 550  3    50   ~ 0
 PC_TX
 Text Label 7350 4050 0    50   ~ 0
@@ -916,7 +916,7 @@ Wire Wire Line
 Text Label 5300 2200 2    50   ~ 0
 RASP_TX_RS232
 Wire Wire Line
-	4700 2200 5300 2200
+	4750 2200 5300 2200
 $Comp
 L power:GND #PWR014
 U 1 1 61296BF1
@@ -1705,17 +1705,15 @@ Wire Wire Line
 NoConn ~ 5600 950 
 NoConn ~ 5500 950 
 Wire Wire Line
-	7050 3400 6400 3400
+	7200 3400 6400 3400
 Wire Wire Line
-	7050 3300 6400 3300
+	7200 3300 6400 3300
 Wire Notes Line
-	7000 3450 7100 3450
+	7150 3450 7250 3450
 Wire Notes Line
-	7100 3250 7000 3250
-Text Notes 7100 3350 0    50   ~ 0
+	7250 3250 7150 3250
+Text Notes 7250 3350 0    50   ~ 0
 TSMS
-Text Label 11250 1600 2    50   ~ 0
-FROM_MUSHROOM
 Wire Wire Line
 	11250 1600 10550 1600
 $Comp
@@ -1729,23 +1727,21 @@ F 3 "" H 6400 3600 50  0001 C CNN
 	1    6400 3600
 	0    1    -1   0   
 $EndComp
-Text Label 7050 3500 2    50   ~ 0
-FROM_MUSHROOM
 Wire Wire Line
-	7050 3500 6400 3500
+	7200 3500 6400 3500
 Wire Notes Line
-	7000 3650 7100 3650
-Text Notes 7100 3600 0    50   ~ 0
+	7150 3650 7250 3650
+Text Notes 7250 3600 0    50   ~ 0
 MUSHROOM
 Wire Notes Line
-	7100 3250 7100 3650
+	7250 3250 7250 3650
 Text Label 5250 3500 0    50   ~ 0
 PS_ON
 Wire Wire Line
 	5250 3500 5900 3500
 Text Label 4150 2100 2    50   ~ 0
 CAN-
-Text Label 2650 2100 0    50   ~ 0
+Text Label 2600 2100 0    50   ~ 0
 CAN+
 $Comp
 L Transistor_FET:2N7002 Q1
@@ -1940,9 +1936,9 @@ F 3 "" H 1650 1000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4200 2500 3650 2500
+	4350 2500 3650 2500
 Wire Wire Line
-	4200 2600 4200 2500
+	4350 2600 4350 2500
 Text Label 3500 4450 0    50   ~ 0
 MISO
 Text Label 3500 4350 0    50   ~ 0
@@ -1967,17 +1963,15 @@ Wire Wire Line
 	5250 3000 5000 3000
 Wire Wire Line
 	5250 2800 5000 2800
-Text Label 7050 3200 2    50   ~ 0
+Text Label 7200 3200 2    50   ~ 0
 RESET_BUTTON
 Wire Wire Line
-	7050 3200 6400 3200
+	7200 3200 6400 3200
 Connection ~ 10150 800 
 Text Label 5250 3600 0    50   ~ 0
-TO_CHARGER
+SD_TO_CHARGER
 Wire Wire Line
 	5250 3600 5900 3600
-Text Notes 5250 3700 0    50   ~ 0
-FROM_MUSHROOM
 Wire Notes Line
 	5350 3700 5250 3700
 Wire Notes Line
@@ -2055,11 +2049,11 @@ Connection ~ 950  2000
 Wire Wire Line
 	950  2000 1000 2000
 Text Label 1950 2000 2    50   ~ 0
-FROM_TSMS_HV
+SD_END_HV
 Wire Wire Line
 	1950 2000 1350 2000
 Text Label 550  1300 0    50   ~ 0
-FROM_TSMS_HV
+SD_END_HV
 Wire Wire Line
 	550  1300 1150 1300
 $Comp
@@ -2229,4 +2223,12 @@ F 3 "~" H 9750 5950 50  0001 C CNN
 	1    9750 5950
 	1    0    0    -1  
 $EndComp
+Text Notes 7200 3650 2    50   ~ 0
+SD_START
+Text Label 7200 3500 2    50   ~ 0
+SD_FROM_MUSHROOM
+Text Label 11250 1600 2    50   ~ 0
+SD_FROM_MUSHROOM
+Text Notes 5250 3700 0    50   ~ 0
+SD_FROM_MUSHROOM
 $EndSCHEMATC
