@@ -4243,7 +4243,7 @@
     (property "Value" "Conn_01x03" (id 1) (at 390.525 208.2799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" (id 2) (at 387.985 205.74 0)
+    (property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" (id 2) (at 387.985 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 387.985 205.74 0)
@@ -4750,7 +4750,7 @@
     (uuid 9625b0ec-5a7e-4144-8381-faea0f97e60f)
     (property "Reference" "J10" (id 0) (at 319.405 56.515 0))
     (property "Value" "Conn_02x03_Odd_Even" (id 1) (at 319.405 59.055 0))
-    (property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal" (id 2) (at 318.135 66.04 0)
+    (property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" (id 2) (at 318.135 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 318.135 66.04 0)
@@ -5007,7 +5007,7 @@
     (uuid b2d0479a-d6d5-4006-be00-d69a6c6e3d9f)
     (property "Reference" "J23" (id 0) (at 320.675 128.905 0))
     (property "Value" "Conn_02x05" (id 1) (at 320.675 131.445 0))
-    (property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal" (id 2) (at 319.405 140.335 0)
+    (property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical" (id 2) (at 319.405 140.335 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 319.405 140.335 0)
@@ -5979,7 +5979,7 @@
       (reference "J9") (unit 1) (value "Conn_01x02") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal")
     )
     (path "/9625b0ec-5a7e-4144-8381-faea0f97e60f"
-      (reference "J10") (unit 1) (value "Conn_02x03_Odd_Even") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal")
+      (reference "J10") (unit 1) (value "Conn_02x03_Odd_Even") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical")
     )
     (path "/0f6d67f8-fdff-410c-83d3-d128bfc124c8"
       (reference "J11") (unit 1) (value "Conn_01x03") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal")
@@ -5991,7 +5991,7 @@
       (reference "J13") (unit 1) (value "Conn_01x04") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0400_1x04_P3.00mm_Horizontal")
     )
     (path "/3721366f-8b2e-47bc-8dd0-98e0da84f60f"
-      (reference "J14") (unit 1) (value "Conn_01x03") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal")
+      (reference "J14") (unit 1) (value "Conn_01x03") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical")
     )
     (path "/e1f32809-f863-41bb-b1b7-6db521cbffc5"
       (reference "J15") (unit 1) (value "Conn_01x02") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical")
@@ -6018,7 +6018,7 @@
       (reference "J22") (unit 1) (value "DB9_Female_DCE") (footprint "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm")
     )
     (path "/b2d0479a-d6d5-4006-be00-d69a6c6e3d9f"
-      (reference "J23") (unit 1) (value "Conn_02x05") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal")
+      (reference "J23") (unit 1) (value "Conn_02x05") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical")
     )
     (path "/4b782307-06ed-4bb9-996a-9a4ecc561613"
       (reference "J24") (unit 1) (value "TE_AmpSeal_14_776273-1") (footprint "00_proj-lib:TE_776266-4")
@@ -6030,7 +6030,7 @@
       (reference "J24") (unit 3) (value "TE_AmpSeal_14_776273-1") (footprint "00_proj-lib:TE_776266-4")
     )
     (path "/5423ac07-d0aa-443c-8aa6-dc2e9e5796c3/84716d3a-19fb-4972-aac1-e3d892a72281"
-      (reference "J25") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal")
+      (reference "J25") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical")
     )
     (path "/647967ad-0a33-4426-b851-d9770e8018f3"
       (reference "J132") (unit 1) (value "TE_Ampseal_23") (footprint "Eagle_Connectors:TE_1-776228-4")
@@ -6056,29 +6056,29 @@
     (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/034f0320-46d1-41ec-90df-02e371cd369a"
       (reference "Q3") (unit 1) (value "NTR5105PT1G") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/b37fa1a3-0a9b-408a-8d38-8977ca4dae0f"
-      (reference "Q4") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/5f37f014-3852-4bbb-8a2d-918dd0ab8c35"
+      (reference "Q4") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/4a3decd8-128d-433d-b25f-e61f38ad86b3"
-      (reference "Q5") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/3c92486e-b031-4c59-8293-0366749371f8"
+      (reference "Q5") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/cd9e5565-c0b4-475b-86a8-610dbdcf9c51"
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/f3c78441-1d9a-400e-8b4b-58bafce8158f"
       (reference "Q6") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/cd480654-3e71-4e89-b572-76a598e85872"
-      (reference "Q7") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/28a7e897-4ea4-49eb-a346-e0f8ce933286"
+      (reference "Q7") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/05ac973e-2b92-463f-b6d7-6ac6bc2a9465"
-      (reference "Q8") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/698b66d7-2f86-4c21-8393-bf5abdc050a6"
+      (reference "Q8") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/c244ee35-5230-477d-a39d-26115e04acd1"
-      (reference "Q9") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/1ca1a1d8-b48e-411a-bed8-7a32132c9340"
+      (reference "Q9") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/883c611b-f3bb-4a66-a0b5-0c722bbfbfe9"
-      (reference "Q10") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/071201a4-e201-4141-bf80-4833f18add0e"
+      (reference "Q10") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
-    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/2fc75c52-1486-49ef-94d3-8e3039e0d0c3"
-      (reference "Q11") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/6d936016-34af-41ab-bb22-2fb19526f2e3/044d0153-35f2-4284-b8a6-de3ead72b825"
+      (reference "Q11") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
     (path "/a4031962-9398-4f34-a2fb-fc028dcbb478/70b1ca8a-4220-4843-b230-d4c328151328"
       (reference "Q12") (unit 1) (value "2N7002NXAKR") (footprint "Package_TO_SOT_SMD:SOT-23")
@@ -6086,8 +6086,8 @@
     (path "/a4031962-9398-4f34-a2fb-fc028dcbb478/72ee69cb-88f7-4242-a242-e8ba8570094a"
       (reference "Q13") (unit 1) (value "NTR5105PT1G") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/a4031962-9398-4f34-a2fb-fc028dcbb478/6a4d98a7-22b3-4692-a52e-7f0e24f8ccfd"
-      (reference "Q14") (unit 1) (value "2N7002NXAKR") (footprint "Package_TO_SOT_SMD:SOT-23")
+    (path "/a4031962-9398-4f34-a2fb-fc028dcbb478/4aa366ce-8ccd-459d-9bb9-220341f39a36"
+      (reference "Q14") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
     (path "/162629fc-92a5-450c-b737-07aff6f9a79c/0bfb7069-30d7-4fb7-abcf-f2b60a1f3921"
       (reference "Q15") (unit 1) (value "2N7002NXAK") (footprint "Package_TO_SOT_SMD:SOT-23")
