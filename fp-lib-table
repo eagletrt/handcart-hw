@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name "handcart")(type "KiCad")(uri "${KIPRJMOD}/modules/handcart.pretty")(options "")(descr ""))
-  (lib (name "00_proj-lib")(type "KiCad")(uri "${KIPRJMOD}/lib/footprints/00_proj-lib.pretty")(options "")(descr ""))
-)
