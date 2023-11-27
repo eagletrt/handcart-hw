@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1_776279_1'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TE Connectivity", "1-776279-1" (!) = "", "17762791", "Other", "571-1-776279-1", "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1-776279-1?qs=tLAa1RwIH6fAW8GUe6Xfuw%3D%3D", "Automotive Connectors 8 POS RIGHT ANGLE HDR ASSY", "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F776279%7FF7%7Fpdf%7FEnglish%7FENG_CD_776279_F7.pdf%7F1-776279-1", "32.1 mm"
+END_PART
+
+END.

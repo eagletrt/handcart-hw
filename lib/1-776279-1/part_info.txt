@@ -1,0 +1,9 @@
+Manufacturer=TE Connectivity
+PartNumber=1-776279-1
+PartCategory=Connector
+PackageCategory=Other
+PinCount=8
+Version=1.1
+Released=2019-05-20 16:05:32
+Downloaded=2023-11-23 10:21:25
+3D=Y
