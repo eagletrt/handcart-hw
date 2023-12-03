@@ -1812,7 +1812,7 @@
     (property "Footprint" "00_proj-lib:SOTFL65P210X75-3N" (id 2) (at 179.07 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 173.99 54.61 0)
+    (property "Datasheet" "https://www.mouser.co.uk/ProductDetail/Toshiba/SSM3K361TULF?qs=r5DSvlrkXmLO9ymRQhnt0A%3D%3D" (id 3) (at 173.99 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Height" "0.75" (id 8) (at 185.42 453.34 0)

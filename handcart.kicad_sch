@@ -3967,6 +3967,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 44fba212-9a2e-4112-95cd-936cdc251403)
   )
+  (wire (pts (xy 198.755 144.78) (xy 198.755 151.13))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 44fec161-69a4-4aed-9608-fd7045a52d0c)
+  )
   (wire (pts (xy 73.66 57.785) (xy 73.66 69.85))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 45d64f9c-7c27-4006-81e8-1c0379bbc6ca)
@@ -4062,6 +4066,10 @@
   (wire (pts (xy 350.52 93.98) (xy 368.3 93.98))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 57d4e5e7-1b15-4fd7-8f11-57808b47c7f3)
+  )
+  (wire (pts (xy 196.215 144.78) (xy 196.215 151.13))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 59503320-cefa-4a0a-b1cf-d5c86b27bb08)
   )
   (wire (pts (xy 346.075 114.3) (xy 368.3 114.3))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -7657,6 +7665,14 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 2bdd48fe-d4ec-4fc0-82b6-eeb6a7ff65bc)
     )
+    (pin "RASP_COOL_2" output (at 198.755 151.13 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 10db7e4b-281e-4b99-8c76-55290d881768)
+    )
+    (pin "RASP_COOL_1" output (at 196.215 151.13 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 8eb5904f-b69f-4380-8673-d3f7690d87cb)
+    )
   )
 
   (sheet (at 156.21 215.265) (size 104.14 36.195) (fields_autoplaced)
@@ -7840,6 +7856,22 @@
     (pin "DIN" input (at 222.885 144.78 270)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 19e44b5b-c606-499a-84cb-108cd6c85720)
+    )
+    (pin "RASP_COOL_1" input (at 196.215 144.78 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid e60f99fd-ae47-4d12-a093-35fe3235112d)
+    )
+    (pin "RASP_COOL_2" input (at 198.755 144.78 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 20ab9171-6dad-4759-ba6e-af74e567e418)
+    )
+    (pin "COOLING_1" input (at 156.21 135.89 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid ea6d386c-5e8b-448b-85a5-d76598160609)
+    )
+    (pin "COOLING_2" input (at 156.21 138.43 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 62200d3e-b3af-4745-bcb5-c57e2282e3d9)
     )
   )
 
@@ -8266,6 +8298,12 @@
     (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/2a792457-3a74-4eab-9f96-dd437aac03d8"
       (reference "#PWR0150") (unit 1) (value "+3V3") (footprint "")
     )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/bff6f55e-c468-4944-ad45-9605d5ab942e"
+      (reference "#PWR0151") (unit 1) (value "+24V") (footprint "")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/c91c703d-cab3-4c0a-bb1a-27456bd4cbf7"
+      (reference "#PWR0152") (unit 1) (value "+24V") (footprint "")
+    )
     (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/35ba7db2-17e9-4d72-a7c3-85ba45c0d11a"
       (reference "#PWR0153") (unit 1) (value "GND") (footprint "")
     )
@@ -8316,6 +8354,12 @@
     )
     (path "/a4031962-9398-4f34-a2fb-fc028dcbb478/d3062c03-d0f4-4c92-b256-d12127ec09c3"
       (reference "#PWR0169") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/57fe55a1-a4bf-4859-842a-cf8233bf68fb"
+      (reference "#PWR0170") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/fdabcfa2-618c-493e-8207-378afac55c03"
+      (reference "#PWR0171") (unit 1) (value "GND") (footprint "")
     )
     (path "/5423ac07-d0aa-443c-8aa6-dc2e9e5796c3/20a21468-72b8-4aa3-af31-6cfbf5c1d3f5"
       (reference "BZ1") (unit 1) (value "Buzzer") (footprint "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm")
@@ -8534,7 +8578,7 @@
       (reference "J17") (unit 3) (value "BMS") (footprint "Eagle_Connectors:TE_776087-4")
     )
     (path "/5423ac07-d0aa-443c-8aa6-dc2e9e5796c3/84716d3a-19fb-4972-aac1-e3d892a72281"
-      (reference "J18") (unit 1) (value "SPARE_RASPI") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical")
+      (reference "J18") (unit 1) (value "SPARE_RASPI") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical")
     )
     (path "/5423ac07-d0aa-443c-8aa6-dc2e9e5796c3/8302046f-ec55-441d-bcd7-40f2d89ea800"
       (reference "J19") (unit 1) (value "Raspberry_Pi_2_3") (footprint "Eagle_Main:raspberrypi_hat_template")
@@ -8563,11 +8607,17 @@
     (path "/a4031962-9398-4f34-a2fb-fc028dcbb478/79d9e502-89ca-4ecc-b6be-cd7a41b1d22e"
       (reference "J27") (unit 1) (value "DISCHARGE_RELAY") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical")
     )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/a6bd9b75-0937-4f4f-bf35-f064c530f633"
+      (reference "J28") (unit 1) (value "COOLING") (footprint "Eagle_Connectors:17762791")
+    )
     (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/21573d0d-1701-4875-9d53-7ad8682cbc7b"
       (reference "J29") (unit 1) (value "SPARE_ADC") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical")
     )
     (path "/a4031962-9398-4f34-a2fb-fc028dcbb478/60f245bf-8649-43ba-bc50-e701a92422c0"
       (reference "J30") (unit 1) (value "SD_END_TEST_POINT") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/e43291a8-4903-4a90-9b82-1664979f32ff"
+      (reference "J31") (unit 1) (value "SPARE_GEN") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical")
     )
     (path "/99247b88-4b04-4caf-b551-2a591db4df70"
       (reference "JP1") (unit 1) (value "RASPBERRY_bypass") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm")
@@ -8637,6 +8687,12 @@
     )
     (path "/1f9d3c6f-b09e-47da-af84-e9d07888a408"
       (reference "Q17") (unit 1) (value "FQP17P06") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/583bc44e-dd52-4971-b99d-ade4033efeda"
+      (reference "Q18") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/80bd90b3-3d24-4b5a-8d17-5ee1b365e4f8"
+      (reference "Q19") (unit 1) (value "SSM3K361TU,LF") (footprint "00_proj-lib:SOTFL65P210X75-3N")
     )
     (path "/6fea3035-a1d5-409d-bb0f-1261e231fe16"
       (reference "R1") (unit 1) (value "22R") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -8850,6 +8906,24 @@
     )
     (path "/1b5441e4-24ae-4f09-95a6-4ecc22c9d6a9"
       (reference "R71") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/6cd6235f-27e1-4d6c-b221-ff3dca989be3"
+      (reference "R72") (unit 1) (value "22R") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/c7c6bd3d-c0dc-4842-8211-cb7be9837f84"
+      (reference "R73") (unit 1) (value "22R") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/82047049-7645-4a9d-8473-1ae2e21502bb"
+      (reference "R74") (unit 1) (value "330k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/665d30cb-85d5-4454-8e12-ce8de0604aea"
+      (reference "R75") (unit 1) (value "330k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/d62d936f-8bad-447c-a212-a581e2d1b3c3"
+      (reference "R76") (unit 1) (value "R") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/2948f888-818a-4224-be88-83862a0f7ee5"
+      (reference "R77") (unit 1) (value "R") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/94f0a6aa-6489-4340-8fae-f0a4bb7d6bec"
       (reference "RN1") (unit 1) (value "100k") (footprint "Resistor_SMD:R_Array_Convex_4x0603")
