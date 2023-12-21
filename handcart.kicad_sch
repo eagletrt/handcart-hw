@@ -8548,7 +8548,7 @@
       (reference "JP4") (unit 1) (value "3V3_ADD_STRIP") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
     )
     (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/f39bca6f-8ae8-4971-ae06-914375417a86"
-      (reference "JP5") (unit 1) (value "Jumper_3_Bridged12") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+      (reference "JP5") (unit 1) (value "BRUSA RX") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
     )
     (path "/c555cf80-c75c-40ac-8827-8af7ca4e4d20/14b2ba65-a54d-4c33-a7fe-46aba019cf5d"
       (reference "JP6") (unit 1) (value "AutoShutdown") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
